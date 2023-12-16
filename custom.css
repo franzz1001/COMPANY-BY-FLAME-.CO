@@ -1,3 +1,4 @@
+
 html, body {
     height: 100%;
     margin: 0;
@@ -10,7 +11,7 @@ body {
     background-color: #1a1c1f;
     color: #fff;
     opacity: 0;
-    animation: fadeInAnimation 2s ease-in forwards; 
+    animation: fadeInAnimation 2s ease-in forwards;
 }
 
 @keyframes fadeInAnimation {
@@ -18,24 +19,18 @@ body {
     100% { opacity: 1; }
 }
 
+
 main {
     flex: 1 0 auto;
 }
 
+
 footer {
-    flex-shrink: 0;
     background-color: #090A0D;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    color: #C7CDD8;
 }
 
 footer a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
+    color: white;
 }
 
 footer a:hover {
@@ -51,16 +46,18 @@ footer a:hover {
     text-align: center;
 }
 
-@media (max-width: 767.98px) {
-    .color-overlay { min-height: 30vh; }
-    .navbar-nav { text-align: center; }
-    .navbar-nav a { display: block; padding: 10px 0; }
-}
-
 .singleCol {
     max-width: 750px;
     margin: auto;
 }
+
+
+@media (max-width: 767.98px) {
+    .color-overlay { min-height: 40vh; }
+    .navbar-nav { text-align: center; }
+    .navbar-nav a { display: block; padding: 10px 0; }
+}
+
 
 .navbar-nav a {
     color: #6097ff;
@@ -70,6 +67,7 @@ footer a:hover {
 .navbar-nav a:hover {
     color: #3b6fff;
 }
+
 
 .team-member {
     text-align: center;
@@ -103,9 +101,28 @@ footer a:hover {
     color: #fff; 
 }
 
+
 header {
     background: no-repeat center center;
     background-size: cover;
     color: white;
     position: relative;
+}
+
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.team-member:hover {
+    background: rgba(4, 63, 255, 0.171);
+    transform: scale(1.05);
+}
+
+.team-member-description {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
 }
