@@ -44,15 +44,40 @@
           </div>
       </nav>
   </div>
-  <main>
-    <header style="background-image: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; height: 100vh; position: relative;">
-      <div class="color-overlay d-flex justify-content-center align-items-center">
-        <div style="text-align: center;">
-         <button type="button" class="btn btn-warning"onclick="window.location.href='https://2503aira.github.io/Memory-Game/?fbclid=IwAR1u5S80TqE83ugA9os9PrAjB4jYAe7aCbk0qIujFgvqudyositrb7zPfCo'">Play Game</button>
-        </div>
-      
+ <style>
+  /* Add this style block to your HTML or include it in your existing stylesheet */
+
+  @keyframes glow {
+    0% {
+      background-color: #ffc107; /* Initial color */
+      box-shadow: 0 0 10px #ffc107; /* Initial shadow */
+    }
+    50% {
+      background-color: #ff8c00; /* Midpoint color */
+      box-shadow: 0 0 20px #ff8c00; /* Midpoint shadow */
+    }
+    100% {
+      background-color: #ffc107; /* Final color */
+      box-shadow: 0 0 10px #ffc107; /* Final shadow */
+    }
+  }
+
+  .btn-warning {
+    animation: glow 2s infinite; /* Adjust the duration as needed */
+  }
+</style>
+
+<!-- Your existing HTML code -->
+<main>
+  <header style="background-image: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; height: 100vh; position: relative;">
+    <div class="color-overlay d-flex justify-content-center align-items-center">
+      <div style="text-align: center;">
+        <button type="button" class="btn btn-warning" onclick="window.location.href='https://2503aira.github.io/Memory-Game/?fbclid=IwAR1u5S80TqE83ugA9os9PrAjB4jYAe7aCbk0qIujFgvqudyositrb7zPfCo'">Play Game</button>
       </div>
-    </main>
+    </div>
+  </header>
+</main>
+
     </div>
   </main>
   <footer class="py-5">
