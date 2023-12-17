@@ -63,7 +63,7 @@ img {
       <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
               <a class="navbar-brand" href="index.html">
-                  <img src="Logo-removebg-preview.png" width="220" height="210" alt="franz Pixels">
+                  <img src="C:\Users\Admin\Downloads\Logo-removebg-preview.png" width="220" height="210" alt="franz Pixels">
                   <span class="d-none">Franz Designs</span>
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -109,6 +109,7 @@ img {
         projectsLink: ' https://franzz1001.github.io/MY-PORTFOLIO/',
         imageSrc: 'Francis.jpg',
         facebookLink: 'https://www.facebook.com/francis.mateo.3557', 
+    linkdenLink: 'https://www.linkedin.com/in/francis-mateo-13338b293/',
         
       },
       {
@@ -118,6 +119,7 @@ img {
         projectsLink: 'https://mlrra.github.io/MY-PORTFOLIO-/',
         imageSrc: 'Larra.jpg',
         facebookLink: 'https://www.facebook.com/larra.patelo', 
+    linkdenLink: 'https://www.linkedin.com/in/francis-mateo-13338b293/',
         
       },
       {
@@ -127,7 +129,7 @@ img {
         projectsLink: 'https://2503aira.github.io/WS02-MID1-4-Portfolio/',
         imageSrc: 'Aira.jpg',
         facebookLink: 'https://www.facebook.com/airajane.nicolas.37', 
-
+    linkdenLink: 'https://www.linkedin.com/in/francis-mateo-13338b293/',
         
       },
       {
@@ -137,15 +139,17 @@ img {
          projectsLink: 'https://markanthonymacabenta.github.io/Portfolio/',
          imageSrc: 'Macabenta.jpg',
         facebookLink: 'https://www.facebook.com/markanthony.macabenta.5', 
-
+    linkdenLink: 'https://www.linkedin.com/in/francis-mateo-13338b293/',
       },
       {
         name: 'Ervin Puirification',
         role: 'Creative Content Strategist',
         bio: 'Ervin members Passionate content strategist with a knack for engaging narratives and meaningful connections.',
+        projectsLink: 'https://franzz1001.github.io/Analog-project',
         projectsLink: 'https://ervin1928.github.io/ervin45/',
         imageSrc: 'Ervin.jpg',
-        facebookLink: 'https://www.facebook.com/ervin.purificacion.5',
+        facebookLink: 'https://www.facebook.com/ervin.purificacion.5', 
+    linkdenLink: 'https://www.linkedin.com/in/francis-mateo-13338b293/',
 
       },
     
@@ -153,31 +157,10 @@ img {
   name: ' Flame.CO',
   role: 'Welcome to Flame.CO',
   bio: 'At Flame.CO, we are not just a company; we are architects of dreams, turning aspirations into tangible realities. Leading a dynamic team of dedicated individuals, we embark on each project as a transformative journey towards excellence. Passion and expertise converge within our ranks, where challenges are transformed into opportunities and dreams into achievements. Our collective spirit resonates with collaboration, innovation, and an unwavering commitment to success.',
-  imageSrc: 'GRoup.jpeg',
+  projectsLink: 'https://flameco.github.io/projects/',
+  imageSrc: 'https://media.istockphoto.com/id/1297311795/photo/group-portrait-of-business-persons-standing-together.jpg?s=2048x2048&w=is&k=20&c=Ir9gVncbK9VInR2ZNjkVR0s_5vcUKuW2mCeeHSOLPs0=',
 }
 
-
-    ];
-    function createTeamMemberCard(member, index) {
-  return `
-    <div class="col-md-4 team-member mb-4 p-3" onmouseover="showDescription(${index})" onmouseout="hideDescription(${index})">
-      <div class="p-4">
-        <img src="${member.imageSrc}" alt="${member.name}" width="150" height="150">
-        <h3>${member.name}</h3>
-        <p>${member.role}</p>
-        <div class="team-member-description" id="description${index}">
-          <p>${member.bio}</p>
-          </a>
-          <a href="${member.facebookLink}" class="btn btn-primary btn-outline-dark">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    `;
-}
-
-  
 
     ];
     function createTeamMemberCard(member, index) {
@@ -239,11 +222,11 @@ teamMembersData.forEach((member, index) => {
      }
      @media (max-width: 767px) {
     .team-member {
-      margin-bottom: 20px; 
+      margin-bottom: 20px; /* Add some space between team members on mobile */
     }
 
     footer {
-      position: relative; 
+      position: relative; /* Remove fixed position on mobile */
     }
   }
   section {
@@ -285,3 +268,4 @@ teamMembersData.forEach((member, index) => {
 </body>
 
 </html>
+
