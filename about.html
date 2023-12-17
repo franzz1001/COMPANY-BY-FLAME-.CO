@@ -179,7 +179,7 @@ img {
 
   
 
-  ];
+    ];
     function createTeamMemberCard(member, index) {
   return `
     <div class="col-md-4 team-member mb-4 p-3" onmouseover="showDescription(${index})" onmouseout="hideDescription(${index})">
@@ -226,6 +226,42 @@ teamMembersData.forEach((member, index) => {
 </body>
 </html>
 
+           
+          </div>
+        </div>
+      </section>
+      
+      <style>
+     .team-member-description {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease;
+     }
+     @media (max-width: 767px) {
+    .team-member {
+      margin-bottom: 20px; 
+    }
+
+    footer {
+      position: relative; 
+    }
+  }
+  section {
+            background-color: #333;
+            padding: 8em 0;
+        }
+
+      </style>
+      
+      
+      
+      </section>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
 
 
 <footer class="py-5">
